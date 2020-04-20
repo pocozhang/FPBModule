@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FPBModule'
-  s.version          = '0.1.4'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of FPBModule.'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
 #  s.resource = 'FPBModule/Assets/*.bundle'
   
    s.resource_bundles = {
-     'FPBModule' => ['FPBModule/Assets/*.bundle}',
+     'FPBModule' => ['FPBModule/Assets/*.bundle',
                   'FPBModule/Assets/*.xcassets']
    }
 
