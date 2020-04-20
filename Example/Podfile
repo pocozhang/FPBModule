@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'FPBModule_Example' do
+  pod 'FPBModule', :path => '../'
+
+  target 'FPBModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

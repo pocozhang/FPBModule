@@ -1,0 +1,6 @@
+framework module FPBModule {
+  umbrella header "FPBModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

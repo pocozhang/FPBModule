@@ -1,0 +1,23 @@
+{
+  "name": "FPBModule",
+  "version": "0.1.0",
+  "summary": "A short description of FPBModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pocozhang/FPBModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "15626448137@163.com": "15626448137@163.com"
+  },
+  "source": {
+    "git": "https://github.com/pocozhang/FPBModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FPBModule/Classes/**/*",
+  "resources": "FPBModule/Assets/*.bundle"
+}

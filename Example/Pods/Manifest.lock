@@ -1,0 +1,16 @@
+PODS:
+  - FPBModule (0.1.0)
+
+DEPENDENCIES:
+  - FPBModule (from `../`)
+
+EXTERNAL SOURCES:
+  FPBModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FPBModule: c5a6f853e5e6e0b56c02f0ad765e2f6b279664e3
+
+PODFILE CHECKSUM: 74f7476befda0fbc9e4ba1c311be3b8f173491a3
+
+COCOAPODS: 1.7.5
