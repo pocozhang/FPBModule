@@ -1,15 +1,72 @@
 PODS:
-  - FPBModule (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FPBModule (0.1.8):
+    - FPBModule/CommonView (= 0.1.8)
+    - FPBModule/FullPathImageUrl (= 0.1.8)
+    - FPBModule/Futool (= 0.1.8)
+    - SAMKeychain
+    - SDWebImage (>= 4.0.0)
+    - XMNetworking
+    - YYCache
+  - FPBModule/CommonView (0.1.8):
+    - SAMKeychain
+    - SDWebImage (>= 4.0.0)
+    - XMNetworking
+    - YYCache
+  - FPBModule/FullPathImageUrl (0.1.8):
+    - SAMKeychain
+    - SDWebImage (>= 4.0.0)
+    - XMNetworking
+    - YYCache
+  - FPBModule/Futool (0.1.8):
+    - SAMKeychain
+    - SDWebImage (>= 4.0.0)
+    - XMNetworking
+    - YYCache
+  - SAMKeychain (1.5.3)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
+  - XMNetworking (1.1.0):
+    - AFNetworking (~> 3.0)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - FPBModule (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - SAMKeychain
+    - SDWebImage
+    - XMNetworking
+    - YYCache
 
 EXTERNAL SOURCES:
   FPBModule:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FPBModule: c5a6f853e5e6e0b56c02f0ad765e2f6b279664e3
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FPBModule: c68ce7ea3d9035f6961b75c14391a1751497dec9
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
+  XMNetworking: 7160cc06f504f325eec515a1e687ee1aa89bc462
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
 PODFILE CHECKSUM: 74f7476befda0fbc9e4ba1c311be3b8f173491a3
 

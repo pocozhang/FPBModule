@@ -1,6 +1,6 @@
 {
   "name": "FPBModule",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "summary": "A short description of FPBModule.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/pocozhang/FPBModule",
@@ -13,11 +13,44 @@
   },
   "source": {
     "git": "https://github.com/pocozhang/FPBModule.git",
-    "tag": "0.1.0"
+    "tag": "0.1.8"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FPBModule/Classes/**/*",
-  "resources": "FPBModule/Assets/*.bundle"
+  "resource_bundles": {
+    "FPBModule": [
+      "FPBModule/Assets/*.bundle",
+      "FPBModule/Assets/*.xcassets"
+    ]
+  },
+  "frameworks": "CoreText",
+  "dependencies": {
+    "YYCache": [
+
+    ],
+    "XMNetworking": [
+
+    ],
+    "SAMKeychain": [
+
+    ],
+    "SDWebImage": [
+      ">= 4.0.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Futool",
+      "source_files": "FPBModule/Classes/Futool/*.{h,m}"
+    },
+    {
+      "name": "FullPathImageUrl",
+      "source_files": "FPBModule/Classes/FullPathImageUrl/*.{h,m}"
+    },
+    {
+      "name": "CommonView",
+      "source_files": "FPBModule/Classes/CommonView/*.{h,m}"
+    }
+  ]
 }

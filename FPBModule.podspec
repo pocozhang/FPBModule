@@ -30,7 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FPBModule/Classes/**/*'
+#  s.source_files = 'FPBModule/Classes/**/*'
+#s.source_files = 'FPBModule/Classes/NSBundle+SubBundle.{h,m}'
 #  s.resource = 'FPBModule/Assets/*.bundle'
   
    s.resource_bundles = {
@@ -38,7 +39,26 @@ TODO: Add long description of the pod here.
                   'FPBModule/Assets/*.xcassets']
    }
 
+   s.subspec 'Futool' do |ss|
+    ss.source_files = 'FPBModule/Classes/Futool/*.{h,m}'
+   end
+   
+   s.subspec 'FullPathImageUrl' do |ss|
+#     ss.dependency 'FPBModule/Classes/Futool'
+     ss.source_files = 'FPBModule/Classes/FullPathImageUrl/*.{h,m}'
+   end
+   
+   s.subspec 'CommonView' do |ss|
+     ss.source_files = 'FPBModule/Classes/CommonView/*.{h,m}'
+   end
+   
+   
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'CoreText'
+   s.dependency 'YYCache'
+   s.dependency 'XMNetworking'
+   s.dependency 'SAMKeychain'
+   s.dependency 'SDWebImage', '>= 4.0.0'
+   
 end

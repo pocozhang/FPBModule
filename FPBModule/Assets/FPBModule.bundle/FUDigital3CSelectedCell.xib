@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,35 +21,35 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insured's ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKm-m1-P6y">
-                        <rect key="frame" x="18" y="15" width="78.5" height="18"/>
+                        <rect key="frame" x="18" y="15" width="75" height="16.5"/>
                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="14"/>
                         <color key="textColor" red="0.24705882352941178" green="0.26666666666666666" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-ar-9RD">
-                        <rect key="frame" x="18" y="43" width="46" height="20"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfa-ar-9RD">
+                        <rect key="frame" x="18" y="41.5" width="30" height="28"/>
                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="13"/>
-                        <state key="normal" title="KTP" image="claim_choice_gray_ic">
+                        <state key="normal" title="KTP">
                             <color key="titleColor" red="0.24705882352941178" green="0.26666666666666666" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
-                        <state key="selected" title="KTP" image="claim_choice_ic"/>
+                        <state key="selected" title="KTP"/>
                         <connections>
                             <action selector="leftAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PWy-al-G9u"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyS-zE-ERX">
-                        <rect key="frame" x="114" y="43" width="58" height="20"/>
+                        <rect key="frame" x="98" y="41.5" width="36" height="28"/>
                         <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="13"/>
-                        <state key="normal" title="KITAS" image="claim_choice_gray_ic">
+                        <state key="normal" title="KITAS">
                             <color key="titleColor" red="0.2470588235" green="0.2666666667" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                         </state>
-                        <state key="selected" title="KITAS" image="claim_choice_ic"/>
+                        <state key="selected" title="KITAS"/>
                         <connections>
                             <action selector="rightAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="z3e-dz-iDd"/>
                         </connections>
                     </button>
                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="KTP/KITAS Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SgO-C8-SfB">
-                        <rect key="frame" x="18" y="73" width="282" height="60"/>
+                        <rect key="frame" x="18" y="79.5" width="282" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="BnF-oI-Fcx"/>
                         </constraints>
@@ -58,7 +57,7 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NV-g5-6WI">
-                        <rect key="frame" x="18" y="113" width="284" height="1"/>
+                        <rect key="frame" x="18" y="119.5" width="284" height="1"/>
                         <color key="backgroundColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="jaF-Oe-Rcw"/>
@@ -90,8 +89,4 @@
             <point key="canvasLocation" x="47.826086956521742" y="30.803571428571427"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="claim_choice_gray_ic" width="20" height="20"/>
-        <image name="claim_choice_ic" width="20" height="20"/>
-    </resources>
 </document>

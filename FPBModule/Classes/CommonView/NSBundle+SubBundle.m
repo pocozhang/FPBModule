@@ -27,6 +27,8 @@
     }
     //没使用framwork的情况下
     NSURL *associateBundleURL = [[NSBundle mainBundle] URLForResource:bundleName withExtension:@"bundle"];
+    
+    [[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"];
     //使用framework形式
     if (!associateBundleURL) {
         associateBundleURL = [[NSBundle mainBundle] URLForResource:@"Frameworks" withExtension:nil];
