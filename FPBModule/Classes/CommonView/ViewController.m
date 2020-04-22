@@ -44,7 +44,7 @@
 
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    FUDigital3CSelectedCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FUDigital3CSelectedCell" forIndexPath:indexPath];
+    FUDigital3CSelectedCell *cell = (FUDigital3CSelectedCell*)[tableView dequeueReusableCellWithIdentifier:@"FUDigital3CSelectedCell" forIndexPath:indexPath];
     
     return cell;
 }
